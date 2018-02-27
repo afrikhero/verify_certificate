@@ -27,10 +27,10 @@ require 'includes/db_connect.php';
               <form role="form" method="post" action="verify.php">
                 <fieldset>
                   <div class="form-group">
-                    <input class="form-control" placeholder="Certificate ID" name="cert_id" type="text" autofocus />
+                    <input class="form-control" placeholder="Certificate ID" name="cert_id" type="text" autofocus required />
                   </div>
                   <div class="form-group">
-                    <input class="form-control" placeholder="Full Name" name="full_name" type="password" value="" />
+                    <input class="form-control" placeholder="Full Name (optional)" name="full_name" type="password" value="" />
                   </div>
                   <input class="btn btn-lg btn-success btn-block" type="submit" value="Verify" name="admin_login" />
                 </fieldset>
