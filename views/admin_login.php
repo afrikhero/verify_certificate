@@ -1,6 +1,3 @@
-<?php
-require 'core/db_connect.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,18 +18,18 @@ require 'core/db_connect.php';
         <div class="col-md-4 col-md-offset-4">
           <div class="login-panel panel panel-success">
             <div class="panel-heading">
-              <h3 class="panel-title">Verify Certificate</h3>
+              <h3 class="panel-title">Sign In</h3>
             </div>
             <div class="panel-body">
-              <form role="form" method="post" action="verify.php">
+              <form role="form" method="post" action="admin_login.php">
                 <fieldset>
                   <div class="form-group">
-                    <input class="form-control" placeholder="Certificate ID" name="cert_id" type="text" autofocus required />
+                    <input class="form-control" placeholder="Username" name="admin_name" type="text" autofocus />
                   </div>
                   <div class="form-group">
-                    <input class="form-control" placeholder="Full Name (optional)" name="full_name" type="password" value="" />
+                    <input class="form-control" placeholder="Password" name="admin_pass" type="password" value="" />
                   </div>
-                  <input class="btn btn-lg btn-success btn-block" type="submit" value="Verify" name="admin_login" />
+                  <input class="btn btn-lg btn-success btn-block" type="submit" value="login" name="admin_login" />
                 </fieldset>
               </form>
             </div>
